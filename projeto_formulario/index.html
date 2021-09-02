@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> Formulário de Presença </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <h1 class="title"> Informaçoes do convidado </h1>
+    
+    <form class="presenca_form">
+
+        <div class="presenca_form_dados">
+        <label for="nome" class="presenca_form_dados_label"> Nome: </label>
+        <input type="text" name="nome" id="nome" class="presenca_form_dados_input">
+        </div>
+
+        <div class="presenca_form_dados">
+        <label for="Acompanhantes" class="presenca_form_dados_label"> Você possui acompanhantes? </label>
+        <textarea name="Acompanhantes" id="Acompanhantes" cols="30" rows="5" class="presenca_form_dados_input acompanhantes"></textarea>
+        </div>
+
+        <div class="presenca_form_dados">
+        <label for="idade" class="presenca_form_dados_label"> Idade: </label>
+        <input type="number" name="idade" id="idade" class="presenca_form_dados_input">
+        </div>
+
+        <fieldset class="presenca_form_dados_filds">
+            <legend class="presenca_form_dados_filds_legend"> Gênero </legend>
+
+            <div class="presenca_form_check">
+                <input type="radio" name="gender" value="Feminino" id="feminino" class="presenca_form_check_true"> 
+                <label for="feminino" class="presenca_form_check_label"> Feminino </label>
+                <div class="presenca_form_check_fake"></div>                
+            </div>
+
+            <div class="presenca_form_check">
+                <input type="radio" name="gender" value="Masculino" id="masculino" class="presenca_form_check_true"> 
+                <label for="masculino" class="presenca_form_check_label"> Masculino </label>
+                <div class="presenca_form_check_fake"></div>                
+            </div>
+
+        </fieldset>
+        
+        <fieldset class="presenca_form_dados_filds">
+            <legend class="presenca_form_dados_filds_legend"> Você deseja confirmar sua presença? </legend>
+
+            <div class="presenca_form_check">
+                <input type="radio" name="presenca" value="sim" id="sim" class="presenca_form_check_true">
+                <label for="sim" class="presenca_form_check_label"> Sim </label>
+                <div class="presenca_form_check_fake"></div>
+            </div>
+
+            <div class="presenca_form_check">
+                <input type="radio" name="presenca" value="nao" id="nao" class="presenca_form_check_true"> 
+                <label for="nao" class="presenca_form_check_label"> Nao </label>
+                <div class="presenca_form_check_fake"></div>
+            </div>
+        </fieldset>
+
+        <div>
+            <label for="message" class="form_message_label"> Deixe-nos uma mensagem! </label>
+            <textarea name="Mensagem" cols="30" rows="10" id="message" class="form_message"></textarea>
+        </div>
+
+        <button class="form_button"> Limpar </button>
+        <button class="form_button"> Enviar </button>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, .form_button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    color: indianred;
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+}
+
+.presenca_form { 
+    width: 1000px;
+    height: 1000px;
+    padding: 50px;
+    margin-top: 0px;
+    margin: 0 auto;
+}
+
+.presenca_form_dados{
+    padding: 10px;
+    display: block;
+}
+
+.presenca_form_dados_label{
+    font-size: 25px;
+    display: block;
+    padding: 5px;
+}
+
+.presenca_form_dados_input{
+    width: 100%;
+    height: 40px;
+    border: 1.5px solid gray;
+    border-radius: 10px;
+    padding: 9px;
+    font-size: 20px;
+}
+
+.presenca_form_dados_filds{
+    height: 100px;
+    border: 1.5px solid gray;
+    border-radius: 10px;
+    padding: 9px;
+    margin: 10px;
+}
+
+.presenca_form_dados_filds_legend{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.presenca_form_check_label{
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.presenca_form_check{
+    display: inline-flex;
+    position: relative;
+    margin-left: 10%;
+    padding: 0px;
+}
+
+.presenca_form_check_true{
+    display: block;
+    opacity: 0;
+}
+
+.presenca_form_check_true, 
+.presenca_form_check_fake{
+    width: 20px;
+    height: 20px;
+}
+
+.presenca_form_check_true:checked ~ .presenca_form_check_fake::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+
+.presenca_form_check_fake{
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+
+}
+
+.form_message_label{
+    font-size: 25px;
+}
+
+.form_message{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.form_button{
+    font-size: 32px;
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: indianred;
+    color: white;
+    margin: 5px 0;
+}
